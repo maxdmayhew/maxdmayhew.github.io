@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Boot strap bb gurl</title>
+	<title>Boot strap bb</title>
 	<meta name="description" content="Hello World">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -15,62 +15,37 @@
 </head>
 
 <body>
+
 	<header>
-		<style>
-			.jumbotron{
-				background-color: #353535;
-				color: #EBEBEB;
-			}
-		</style>
 		<div class="jumbotron">
 			<div class="container">
-				<h1>hello world</h1>
+				<h1>Hello World</h1>
+				<h3>chris look @ me</h3>
 			</div> 
 		</div> 
 	</header>
 
-		<!-- div class="container">
+		<div class="container">
+			<!-- div class="row"><div class="well">chris do u even read?</div></div>
+			<div class="row"><div class="well">do ya?</div></div -- >
 			<div class="row">
 				<div class="col-sm-3">
-					<div class="well"> 1st Col</div>
+					<div class="well"> 1st Column </div>
 				</div>
 				<div class="col-sm-3">
-					<div class="well"> 1st Col</div>
+					<div class="well"> 2nd Column </div>
 				</div>
 				<div class="col-sm-3">
-					<div class="well"> 1st Col</div>
+					<div class="well"> 3rd Column </div>
 				</div>
 				<div class="col-sm-3">
-					<div class="well"> 1st Col</div>
+					<div class="well"> 4th Column </div>
 				</div>
 			</div>
-		</div -->
-
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
-				<div class="navbar=header">
-					<a class="navbar-brand" href="#">.max</a>
-				</div>
-			<div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">home</a></li>
-					<li><a href="#">resume</a></li>
-					<li><a href="#">code</a></li>
-					<li><a href="#">art</a></li>
-				</ul>
-			</div>
-			</div>
-		</nav>
-
-
+		</div>
 		
 
 	<footer>
-		<style>
-		{
-			background-color: #EBEBEB;
-		}
-		</style>
 		<div class="container">
 			<hr>
 
