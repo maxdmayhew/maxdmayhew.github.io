@@ -20,8 +20,8 @@ section {
 #nav {
 	z-index:2;
 	position:fixed;
-	height:50%;
-	margin: auto auto auto 50px;
+	height:95%;
+	margin: auto auto auto 10px;
 	top:0;left:0;bottom:0;right:0;
 }
 
@@ -90,11 +90,17 @@ span.labels {
 
 }
 
-
+/* ALL OF THIS IS FOR COLORS OF THE TEXT! */
 span#label-mail { color:#9bca2c; }
 span#label-settings { color:#3b83ce; }
 span#label-video { color:#a63ace; }
 span#label-search { color:#cd9940; }
+
+
+#game-label {
+        color:#acdf9f;
+}
+
 
 @media only screen and (max-width: 40.063em) {
 

@@ -14,21 +14,7 @@ $(document).ready(function() {
 	    }
 	  });
 	});
-
-    
-//    $('html,body').blurjs({
-//            draggable: false,
-//            overlay: 'rgba(255,255,255,0.8)',
-//            radius: 10
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
 	var emailOffset = $("#mail-iface").offset().top;
 	var settingsOffset = $("#settings-iface").offset().top;
 	var videoOffset = $("#video-iface").offset().top;
