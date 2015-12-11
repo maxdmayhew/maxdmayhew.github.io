@@ -15,16 +15,16 @@ $(document).ready(function() {
 	  });
 	});
    
-	var emailOffset = $("#mail-iface").offset().top;
+	var homeOffset = $("#home-iface").offset().top;
 	var settingsOffset = $("#settings-iface").offset().top;
 	var videoOffset = $("#video-iface").offset().top;
 	var searchOffset = $("#search-iface").offset().top;
 
 	var $w = $(window).scroll(function() {
 
-		if ($w.scrollTop() >= emailOffset) {
-			$("#email").css("background", "url(images/icon-email-active.png) no-repeat");
-			inactiveLinks("email");
+		if ($w.scrollTop() >= homeOffset) {
+			$("#home").css("background", "url(images/homeColor.png) no-repeat");
+			inactiveLinks("home");
 		}
 
 		if ($w.scrollTop() >= settingsOffset) {
@@ -48,8 +48,8 @@ $(document).ready(function() {
 
 function inactiveLinks(exclude) {
 
-	if (exclude != "email")
-		$("#email").css("background", "url(images/icon-email-inactive.png) no-repeat");
+	if (exclude != "home")
+		$("#home").css("background", "url(images/homeNoColor.png) no-repeat");
 
 	if (exclude != "settings")
 		$("#settings").css("background", "url(images/icon-cog-inactive.png) no-repeat");
