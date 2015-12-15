@@ -16,9 +16,9 @@ $(document).ready(function() {
 	});
    
 	var homeOffset = $("#home-iface").offset().top;
-	var settingsOffset = $("#settings-iface").offset().top;
-	var videoOffset = $("#video-iface").offset().top;
-	var searchOffset = $("#search-iface").offset().top;
+	var codeOffset = $("#code-iface").offset().top;
+	var artOffset = $("#art-iface").offset().top;
+	var resumeOffset = $("#resume-iface").offset().top;
 
 	var $w = $(window).scroll(function() {
 
@@ -27,19 +27,19 @@ $(document).ready(function() {
 			inactiveLinks("home");
 		}
 
-		if ($w.scrollTop() >= settingsOffset) {
-			$("#settings").css("background", "url(images/icon-cog-active.png) no-repeat");
-			inactiveLinks("settings");
+		if ($w.scrollTop() >= codeOffset) {
+			$("#code").css("background", "url(images/codeColor.png) no-repeat");
+			inactiveLinks("code");
 		}
 
-		if ($w.scrollTop() >= videoOffset) {
-			$("#video").css("background", "url(images/icon-video-active.png) no-repeat");
-			inactiveLinks("video");
+		if ($w.scrollTop() >= artOffset) {
+			$("#art").css("background", "url(images/artColor.png) no-repeat");
+			inactiveLinks("art");
 		}
 
-		if ($w.scrollTop() >= searchOffset) {
-			$("#search").css("background", "url(images/icon-search-active.png) no-repeat");
-			inactiveLinks("search");
+		if ($w.scrollTop() >= resumeOffset) {
+			$("#resume").css("background", "url(images/resumeColor.png) no-repeat");
+			inactiveLinks("resume");
 		}
 
 	});
@@ -51,13 +51,13 @@ function inactiveLinks(exclude) {
 	if (exclude != "home")
 		$("#home").css("background", "url(images/homeNoColor.png) no-repeat");
 
-	if (exclude != "settings")
-		$("#settings").css("background", "url(images/icon-cog-inactive.png) no-repeat");
+	if (exclude != "code")
+		$("#code").css("background", "url(images/codeNoColor.png) no-repeat");
 
-	if (exclude != "video")
-		$("#video").css("background", "url(images/icon-video-inactive.png) no-repeat");
+	if (exclude != "art")
+		$("#art").css("background", "url(images/artNoColor.png) no-repeat");
 
-	if (exclude != "search")
-		$("#search").css("background", "url(images/icon-search-inactive.png) no-repeat");
+	if (exclude != "resume")
+		$("#resume").css("background", "url(images/resumeNoColor.png) no-repeat");
 
 }

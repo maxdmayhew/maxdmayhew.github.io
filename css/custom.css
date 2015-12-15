@@ -26,9 +26,9 @@ section {
 }
 
 #home-iface { background-color:#575757; }
-#settings-iface { background-color:#969696; }
-#video-iface { background-color:#575757; }
-#search-iface { background-color:#969696; }
+#code-iface { background-color:#2A2A2A; }
+#art-iface { background-color:#575757; }
+#resume-iface { background-color:#2A2A2A; }
 
 span.labels {
 	font-family:'Raleway';
@@ -41,6 +41,7 @@ span.labels {
 
 #nav ul {
 	list-style-type:none;
+    font-family: monospace;
 }
 
 #nav ul li {
@@ -62,39 +63,40 @@ span.labels {
 
 }
 
-#nav ul li#settings {
-	background:url(../images/icon-cog-inactive.png) no-repeat;
+#nav ul li#code {
+	background:url(../images/codeNoColor.png) no-repeat;
+	width:45px;
+	height:45px;
+}
+
+#nav ul li#code a {
+	margin-left:8px;
+}
+
+
+#nav ul li#art {
+	background:url(../images/artNoColor.png) no-repeat;
 	width:43px;
 	height:44px;
 }
 
-#nav ul li#settings a {
-	margin-left:5px;
-}
-
-
-#nav ul li#video {
-	background:url(../images/icon-video-inactive.png) no-repeat;
-	width:48px;
-	height:44px;
-}
-
-#nav ul li#video a {
+#nav ul li#art a {
 	margin-left: 5px;
 }
 
-#nav ul li#search {
-	background:url(../images/icon-search-inactive.png) no-repeat;
-	width:43px;
+#nav ul li#resume {
+	background:url(../images/resumeNoColor.png) no-repeat;
+	width:44px;
 	height:44px;
 
 }
 
+
 /* ALL OF THIS IS FOR COLORS OF THE TEXT! */
-span#label-mail { color:#9bca2c; }
-span#label-settings { color:#3b83ce; }
-span#label-video { color:#a63ace; }
-span#label-search { color:#cd9940; }
+span#label-home { color:#9bca2c; }
+span#label-code { color:#3b83ce; }
+span#label-art { color:#a63ace; }
+span#label-resume { color:#cd9940; }
 
 
 #game-label {
