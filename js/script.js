@@ -1,9 +1,19 @@
 $(document).ready(function() {
 
 	$(function() {
+        
         $.scrollify({
-                section: ".panel",
+                section: ".panel"
             });
+        
+//	$(".scroll").click(function(e) {
+//		e.preventDefault();
+//
+//		$.scrollify.next();
+//	});
+        
+        
+        
         	  $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      var target = $(this.hash);
@@ -26,22 +36,22 @@ $(document).ready(function() {
 	var $w = $(window).scroll(function() {
 
 		if ($w.scrollTop() >= homeOffset) {
-			$("#home").css("background", "url(images/homeColor.png) no-repeat");
+			$("#home").css("background", "url(../images/homeColor.png) no-repeat");
 			inactiveLinks("home");
 		}
 
 		if ($w.scrollTop() >= codeOffset) {
-			$("#code").css("background", "url(images/codeColor.png) no-repeat");
+			$("#code").css("background", "url(../images/codeColor.png) no-repeat");
 			inactiveLinks("code");
 		}
 
 		if ($w.scrollTop() >= artOffset) {
-			$("#art").css("background", "url(images/artColor.png) no-repeat");
+			$("#art").css("background", "url(../images/artColor.png) no-repeat");
 			inactiveLinks("art");
 		}
 
 		if ($w.scrollTop() >= resumeOffset) {
-			$("#resume").css("background", "url(images/resumeColor.png) no-repeat");
+			$("#resume").css("background", "url(../images/resumeColor.png) no-repeat");
 			inactiveLinks("resume");
 		}
 
@@ -52,15 +62,15 @@ $(document).ready(function() {
 function inactiveLinks(exclude) {
 
 	if (exclude != "home")
-		$("#home").css("background", "url(images/homeNoColor.png) no-repeat");
+		$("#home").css("background", "url(../images/homeNoColor.png) no-repeat");
 
 	if (exclude != "code")
-		$("#code").css("background", "url(images/codeNoColor.png) no-repeat");
+		$("#code").css("background", "url(../images/codeNoColor.png) no-repeat");
 
 	if (exclude != "art")
-		$("#art").css("background", "url(images/artNoColor.png) no-repeat");
+		$("#art").css("background", "url(../images/artNoColor.png) no-repeat");
 
 	if (exclude != "resume")
-		$("#resume").css("background", "url(images/resumeNoColor.png) no-repeat");
+		$("#resume").css("background", "url(../images/resumeNoColor.png) no-repeat");
 
 }
