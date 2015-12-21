@@ -7,9 +7,12 @@ html, body {
     vertical-align: baseline;
 }
 
+hr {
+    border: 1px solid #383838;
+}
+
 section {
 	height:100vh;
-    width: 100%;
 	position:relative;
 	text-align:center;
 }
@@ -45,7 +48,7 @@ span.labels {
 	/* text-transform:uppercase; */
 	font-size:1.7em;
 	display:block;
-	margin-top:20px;
+	margin-top:0px;
 }
 
 #nav ul {
@@ -118,7 +121,7 @@ div.artCustom {
 
 }
 
-div.large-12.contents {
+div.large-12.contents{
     top:20%;
 }
 
@@ -129,7 +132,31 @@ div.galleria {
     margin: auto 0;
 }
 
+.codeBlock {
+    font-family: "Tahoma";
+    color: #9ABCE0;
+}
 
+.column-center {
+    display: inline-block; 
+    width: 33%;    
+}
+
+
+.column-center img {
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.column-left {
+    float: left;
+    width: 33%;
+}
+
+.column-right {
+    float: right;
+    width: 33%;
+}
 
 
 /* ALL OF THIS IS FOR COLORS OF THE TEXT! */
