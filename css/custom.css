@@ -214,10 +214,10 @@ div.galleria {
 
 
 /* ALL OF THIS IS FOR COLORS OF THE TEXT! */
-span#label-home { color:#9bca2c; }
-span#label-code { color:#3b83ce; }
-span#label-art { color:#a63ace; }
-span#label-resume { color:#cd9940; }
+span#label-home { color:#BFBFBF; }
+span#label-code { color:#ababab; }
+span#label-art { color:#BFBFBF; }
+span#label-resume { color:#ababab; }
 
 
 @media only screen and (max-width: 40.063em) {
