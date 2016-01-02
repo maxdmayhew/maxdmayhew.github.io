@@ -7,6 +7,12 @@ html, body {
     vertical-align: baseline;
 }
 
+.wrapper { 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+
 #hrTop {
     border: 1.5px solid #383838;
     width: 75%;
@@ -124,8 +130,25 @@ span.labels {
     margin-left: 5px;
 }
 
-div.leftCol img {
-    /* no idea */
+.leftCol img {
+    border-radius: 2px;
+    border: 2px solid rgba(42,42,42,0.6);
+}
+
+.leftCol img:hover {
+    background: rgba(42,42,42,0.6);
+}
+
+.githubDiv {
+    margin: 0 auto;
+    width: 75%;
+    border-radius: 2px;
+    padding-top: 2px;
+    border: 2px solid rgba(42,42,42,0.6);
+}
+
+.githubDiv:hover {
+    background: rgba(42,42,42,0.6);
 }
 
 div.codeCustom {
@@ -150,8 +173,8 @@ div.large-12.contents{
 }
 
 div.galleria {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     margin: auto 0;
 }
 
@@ -207,6 +230,17 @@ div.galleria {
 
 .ggjCol {
     position: relative;
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 2px;
+    border: 2px solid rgba(42,42,42,0.6);
+}
+
+.ggjCol:hover {
+    background: rgba(42,42,42,0.6);
+
 }
 
 
@@ -250,11 +284,13 @@ div.galleria {
 }
 
 .homeEtc{
-    width:105px;
-    height: 35px;
+    width:150px;
+    height: 40px;
     margin: 0 auto;
     padding-left: 2px;
     padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     border-left: solid 1px #383838;
     border-right: solid 1px #383838;
     
@@ -262,17 +298,54 @@ div.galleria {
 
 .hCenter {
     display: inline-block; 
-    padding-left: 1px;
-    padding-right: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 3px rgba(42,42,42,0.6);    
 }
 
+.hCenter img {  
+    transform: translateY(15%); 
+}
+
+.hCenter:hover {
+    background-color: rgba(42,42,42,0.6);
+}
+
+/* left button */
 .hLeft {
     float: left;
-    
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 3px rgba(42,42,42,0.6);    
 }
 
+.hLeft img {
+    transform: translateY(15%);
+}
+
+.hLeft:hover {
+    background-color: rgba(42,42,42,0.6);  
+}
+
+
+/* right button */
 .hRight {
     float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 3px rgba(42,42,42,0.6);
+}
+
+.hRight img {
+    transform: translateY(15%);
+}
+
+.hRight:hover {
+    background-color: rgba(42,42,42,0.6);
+    
 }
 
 
@@ -296,12 +369,13 @@ div.galleria {
     width: 125px;
     margin: 0 auto;
     padding: 4px 4px 4px 4px;
-    border: solid 2px #383838;
+    border: solid 2px rgba(56,56,56,0.8);
 }
 
 
 .resumeLink:hover{
-    background: #383838; 
+    background: rgba(56,56,56,0.8);
+; 
 }
 
 
