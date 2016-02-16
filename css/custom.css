@@ -117,7 +117,7 @@ span.labels {
 
 .leftCol img {
     border-radius: 2px;
-    border: 2px solid rgba(42,42,42,0.6);
+    border: 2px groove rgba(42,42,42,0.6);
 }
 
 .leftCol img:hover {
@@ -129,7 +129,7 @@ span.labels {
     width: 75%;
     border-radius: 2px;
     padding-top: 2px;
-    border: 2px solid rgba(42,42,42,0.6);
+    border: 2px groove rgba(42,42,42,0.6);
 }
 
 .githubDiv:hover {
@@ -171,7 +171,7 @@ div.galleria {
 
 
 .column-center {
-    border:solid 2px #333333;
+    border: groove 2px #333333;
     display: inline-block; 
     width: 33%;
     border-radius: 3px;
@@ -189,7 +189,7 @@ div.galleria {
     width: 30%;
     height: 100%;
     border-radius: 5px;
-    border: solid 2px #333333;
+    border: groove 2px #333333;
     padding: 5px 2px 10px 2px;
 }
 
@@ -203,10 +203,8 @@ div.galleria {
     float: right;
     width: 30%;
     border-radius: 5px;
-    border: solid 2px #333333;
+    border: groove 2px #333333;
     padding: 50px 2px 140px 2px;
-/*    top: 50%;*/
-/*    transform: translateY(50%); */
 }
 
 .column-right:hover{
@@ -220,7 +218,7 @@ div.galleria {
     padding-top: 3px;
     padding-bottom: 3px;
     border-radius: 2px;
-    border: 2px solid rgba(42,42,42,0.6);
+    border: 2px groove rgba(42,42,42,0.6);
 }
 
 .ggjCol:hover {
@@ -283,14 +281,14 @@ div.galleria {
 
 .hCenter {
     display: inline-block; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: solid 3px rgba(42,42,42,0.6);    
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    border: solid 2px rgba(42,42,42,1);    
 }
 
 .hCenter img {  
-    transform: translateY(15%); 
+    transform: translateY(22%); 
 }
 
 .hCenter:hover {
@@ -300,14 +298,14 @@ div.galleria {
 /* left button */
 .hLeft {
     float: left;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: solid 3px rgba(42,42,42,0.6);    
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    border: solid 2px rgba(42,42,42,1);    
 }
 
 .hLeft img {
-    transform: translateY(15%);
+    transform: translateY(22%);
 }
 
 .hLeft:hover {
@@ -318,14 +316,14 @@ div.galleria {
 /* right button */
 .hRight {
     float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: solid 3px rgba(42,42,42,0.6);
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    border: solid 2px rgba(42,42,42,1);
 }
 
 .hRight img {
-    transform: translateY(15%);
+    transform: translateY(22%);
 }
 
 .hRight:hover {
@@ -354,7 +352,7 @@ div.galleria {
     width: 125px;
     margin: 0 auto;
     padding: 4px 4px 4px 4px;
-    border: solid 2px rgba(56,56,56,0.8);
+    border: groove 2px rgba(56,56,56,0.8);
 }
 
 
