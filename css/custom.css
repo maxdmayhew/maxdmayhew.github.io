@@ -18,6 +18,59 @@ section {
 	text-align:center;
 }
 
+#arrows {
+    z-index: 10;
+    position: fixed;
+    bottom: 3%;
+    left: 1%;
+    
+    
+}
+
+#arrowUp:hover {
+
+      -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+
+
+
+/* Shine */
+#arrowUp {
+	position: relative;
+}
+#arrowUp::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+#arrow:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
 
 .contents {
 	width:70%;
@@ -101,11 +154,11 @@ div.galleria {
 .codeBlock {
     font-family: 'Comfortaa', cursive;
     color: #DBDBDB;
-    max-height: 100%;
     max-height: 100vh;
     max-width: 100vh;
     margin: 0 auto;
     margin-top: 10%;
+
     
 }
 
@@ -290,7 +343,7 @@ div.galleria {
 
 .resumeLink{
     border-radius: 100%;
-    width: 125px;
+    width: 150px;
     margin: 0 auto;
     padding: 4px 4px 4px 4px;
     border: groove 2px rgba(56,56,56,0.8);
@@ -303,10 +356,12 @@ div.galleria {
 
 #codeIcon { 
     margin-top: 25px;
+    height: 12%;
 }
 
 #artIcon {
-    margin-top: 25px;   
+    margin-top: 15px; 
+    height: 12%;
 }
 
 
@@ -332,9 +387,7 @@ span#label-resume { color:#ababab; }
         margin-left: 8%;
         }
         
-        #codeIcon {
-            height: 10%;
-        }
+
         
         
     }
@@ -396,7 +449,7 @@ span#label-resume { color:#ababab; }
         
         .codeBlock {
         font-size: 16px;
-        margin-left: auto;
+        margin-left: 22%;
         }
         
     }

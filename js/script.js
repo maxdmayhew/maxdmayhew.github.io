@@ -10,3 +10,13 @@ $(document).ready(function() {
     
     })
 });
+
+
+
+function up() {
+    $.scrollify.previous();
+}
+
+function down() {
+    $.scrollify.next();
+}
