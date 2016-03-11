@@ -354,6 +354,10 @@ div.galleria {
     background: rgba(56,56,56,0.8);
 }
 
+#homeIcon {
+    height: 18%;
+}
+
 #codeIcon { 
     margin-top: 25px;
     height: 12%;
