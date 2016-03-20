@@ -369,6 +369,15 @@ div.galleria {
 }
 
 
+.btn-link {
+    transition: all .2s ease-in-out;
+}
+
+.btn-link:hover {
+    transform: scale(1.1);
+}
+
+
 /* ALL OF THIS IS FOR COLORS OF THE TEXT! */
 span#label-home { color:#BFBFBF; }
 span#label-code { color:#ababab; }
