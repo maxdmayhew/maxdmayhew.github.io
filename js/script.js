@@ -20,3 +20,16 @@ function up() {
 function down() {
     $.scrollify.next();
 }
+
+function twitterLink () {
+    window.open("https://twitter.com/maxokay");
+}
+
+function tumblrLink() {
+    window.open("http://whatmax.tumblr.com/");
+}
+
+function instaLink() {
+    window.open("https://www.instagram.com/max.exe/");
+}
+
