@@ -73,7 +73,7 @@ section {
 
 
 .contents {
-	width:70%;
+	width:90%;
 	height:70%;
 	overflow:auto;
 	margin:auto;
@@ -152,13 +152,27 @@ div.galleria {
 
 
 .codeBlock {
+    display: flex;
     font-family: 'Comfortaa', cursive;
     color: #DBDBDB;
-    max-height: 100vh;
-    max-width: 100vh;
-    margin: 0 auto;
     margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 
+    
+}
+
+.codeCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.codeInfo {
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -396,8 +410,6 @@ span#label-resume { color:#ababab; }
         
         .codeBlock {
         font-size: 11px;
-        text-align: left;
-        margin-left: 8%;
         }
         
 
@@ -406,7 +418,12 @@ span#label-resume { color:#ababab; }
     }
 
 /* == IPHONE 6 ISSUE == */
-@media only screen and (min-width: 375px) { .codeBlock{ margin-left: 12%; } }
+@media only screen and (min-width: 375px) 
+{
+    .codeBlock {
+ 
+    } 
+}
 
 
 @media only screen and (min-width: 480px)
@@ -418,7 +435,6 @@ span#label-resume { color:#ababab; }
         
         .codeBlock {
         font-size: 14px;
-        margin-left: 15%;
         }
         
         
@@ -433,7 +449,6 @@ span#label-resume { color:#ababab; }
         
         .codeBlock {
         font-size: 16px;
-        margin-left: 20%;
         }
         
         
@@ -462,7 +477,8 @@ span#label-resume { color:#ababab; }
         
         .codeBlock {
         font-size: 16px;
-        margin-left: 22%;
+        margin-left: 20%;
+        margin-right: 20%;
         }
         
     }
