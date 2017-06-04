@@ -150,11 +150,20 @@
                 <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/ss5.JPG" title="more menu UI from Native"></div>
 
             </div>
+                        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
             </div>
                 <script>
                 var swiper = new Swiper('.swiper-container', {
                     pagination: '.swiper-pagination',
-                    paginationClickable: true
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    sildesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true
                 });
                 </script>
 
