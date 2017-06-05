@@ -19,8 +19,6 @@ section {
 }
 
 #arrows {
-    color: #fff;
-    font-size: 42px;
     z-index: 10;
     position: fixed;
     bottom: 3%;
@@ -30,31 +28,52 @@ section {
 }
 
 #arrowUp:hover {
-    -webkit-transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-    filter: blur(5px);
+
+      -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
 }
 
-#arrowDown:hover {
-    -webkit-transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    -webkit-filter: blur(5px);
-    filter: blue(5px);
-}
 
+
+
+/* Shine */
 #arrowUp {
-        -webkit-transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	position: relative;
+}
+#arrowUp::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+#arrow:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
 }
 
-#arrowDown {
-        -webkit-transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
-}
+
 
 .contents {
-	width:90%;
+	width:70%;
 	height:70%;
 	overflow:auto;
 	margin:auto;
@@ -133,27 +152,13 @@ div.galleria {
 
 
 .codeBlock {
-    display: flex;
     font-family: 'Comfortaa', cursive;
     color: #DBDBDB;
+    max-height: 100vh;
+    max-width: 100vh;
+    margin: 0 auto;
     margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
 
-    
-}
-
-.codeCard {
-    display: flex;
-    flex-direction: column;
-}
-
-.codeInfo {
-    display: flex;
-    flex-direction: column;
     
 }
 
@@ -391,6 +396,8 @@ span#label-resume { color:#ababab; }
         
         .codeBlock {
         font-size: 11px;
+        text-align: left;
+        margin-left: 8%;
         }
         
 
@@ -399,12 +406,7 @@ span#label-resume { color:#ababab; }
     }
 
 /* == IPHONE 6 ISSUE == */
-@media only screen and (min-width: 375px) 
-{
-    .codeBlock {
- 
-    } 
-}
+@media only screen and (min-width: 375px) { .codeBlock{ margin-left: 12%; } }
 
 
 @media only screen and (min-width: 480px)
@@ -416,6 +418,7 @@ span#label-resume { color:#ababab; }
         
         .codeBlock {
         font-size: 14px;
+        margin-left: 15%;
         }
         
         
@@ -430,6 +433,7 @@ span#label-resume { color:#ababab; }
         
         .codeBlock {
         font-size: 16px;
+        margin-left: 20%;
         }
         
         
@@ -458,8 +462,7 @@ span#label-resume { color:#ababab; }
         
         .codeBlock {
         font-size: 16px;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 22%;
         }
         
     }

@@ -1,154 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- hi :~) -->
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-74995011-1', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <title>I'm max</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Comfortaa:300,700' rel='stylesheet' type='text/css'>
-    <!-- SWIPER DUDE SWIPING -->
-    <link rel="stylesheet" href="css/swiper.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm max</title>
+     
+  <link rel="stylesheet" href="css/custom.css" />
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa:300,700' rel='stylesheet' type='text/css'>
+<!--  <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">-->
+     <link rel="stylesheet" href="css/bootstrap.css">
+     
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.scrollify.min.js"></script>
-    <!-- ITS YA BOI -->
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/custom.css" />
-</head>
-
-<body>
-    <div id="arrows">
-        <img id="arrowUp" src="images/arrowUp.png" onclick="up()">
-        <img id="arrowDown" src="images/arrowDown.png" onclick="down()">
-    </div>
-    <div id="wrapper">
-        <section id="home-iface" class="panel home" data-section-name="home">
-            <div class="large-12 contents">
-                <img src="images/wasp.png" id="homeIcon" />
-                <span class="labels" id="label-home">about
+  
+ </head>
+ <body>
+     
+ 
+     <div id="arrows">
+     <img src="images/arrowUp.png" onclick="up()"><img src="images/arrowDown.png" onclick="down()">
+     </div>
+     
+     <div id="wrapper">
+     
+      <section id="home-iface" class="panel home" data-section-name="home">
+        <div class="large-12 contents">
+          <img src="images/wasp.png" id="homeIcon" />
+          <span class="labels" id="label-home">about
             </span>
-                <br>
-                <div class="aboutme">
-                    <p class="aboutPara">
-                        Max is a geek. He is a developer and an artist. Icons created with flash and aseprite.
-                    </p>
-                </div>
-                <div class="btn-group homeLinks" role="group" aria-label="...">
-                    <button type="button" class="btn btn-link">
-                        <img src="images/insta.png" alt="instagram" onclick="instaLink()">
-                    </button>
-                    <button type="button" class="btn btn-link">
-                        <img src="images/twitter.png" alt="twitter" onclick="twitterLink()">
-                    </button>
-                    <button type="button" class="btn btn-link">
-                        <img src="images/tumblr.png" alt="tumblr" onclick="tumblrLink()">
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section id="code-iface" class="panel code" data-section-name="code">
-            <img src="images/codeLarge.png" id="codeIcon" />
-            <span class="labels" id="label-code">code.</span>
-            <div class="codeBlock">
-                <div class="codeCard">
-                    <a href="https://github.com/maxdmayhew" class="card">
-                        <img src="images/github2.png" alt="github" class="img-responsive">
-                    </a>
-                    <div class="codeInfo">
-                        Personal Account
-                    </div>
-                </div>
-                <div class="codeCard">
-                    <a href="http://nativethegame.com/" class="card">
-                        <img src="images/native.png" alt="native" class="img-responsive">
-                    </a>
-                    <div class="codeInfo">
-                        Native, 2D Game
-                    </div>
-                </div>
-                <div class="codeCard">
-                    <a href="https://youtu.be/kHOpuTQZwXI" class="card">
-                        <img src="images/louie.png" alt="louie" class="img-responsive">
-                    </a>
-                    <div class="codeInfo">
-                        Louie, 2D Game
-                    </div>
-                </div>
-                <div class="codeCard">
-                    <a href="http://globalgamejam.org/users/climax" class="card">
-                        <img src="images/ggj.png" alt="global game jam" class="img-responsive">
-                    </a>
-                    <div class="codeInfo">
-                        Global Game Jam
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="art-iface" class="panel art" data-setion-name="art">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="images/cat1.jpg" title="cat, 2016"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="images/ggj2016_1.jpg" title="Global Game Jam, 2016"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/control.JPG" title="control, 2015"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/owl3.jpg" title="owl, 2015"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/dog.JPG" title="dog, 2015"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/falling.PNG" title="falling, 2015"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/louieDemo.jpg" title="Louie demo level"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="images/louieRun.gif" title="Louie run animation"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/vfx.gif" title="dust animation from Native"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/fox.gif" title="animation created in Unity"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/customfont.JPG" title="custom font created for Native"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/ss4.JPG" title="menu UI from Native"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/ss1.jpg" title="storage chest UI from Native"></div>
-                    <div class="swiper-slide"><img class="img-fluid" alt="Responsive image" src="/images/ss5.JPG" title="more menu UI from Native"></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
+            
+            <br>
+                <div class="aboutme"><p class="aboutPara">
+                Max is a geek. He is a developer and an artist. Icons created with flash and aseprite.
+                </p></div>
 
-            <body>
-        </section>
-        <section id="resume-iface" class="panel resume" data-section-name="resume">
-            <div class="large-12 contents">
-                <div class="resumeLink">
-                    <a href="resume.pdf">
-                        <img src="images/resumeLarge.png">
-                        <span class="labels" id="label-resume">resume.</span></a>
-                </div>
-                <br>
-                <br>
-                <br>contact me:
-                <br> maxdmayhew@gmail.com
-            </div>
-        </section>
-    </div>
-    </body>
+            <div class="btn-group homeLinks" role="group" aria-label="...">
+                <button type="button" class="btn btn-link">
+                <img src="images/insta.png" alt="instagram" onclick="instaLink()">
 
+                </button>
+                
+                <button type="button" class="btn btn-link">
+                <img src="images/twitter.png" alt="twitter" onclick="twitterLink()">
+                </button>
+
+                <button type="button" class="btn btn-link">
+                <img src="images/tumblr.png" alt="tumblr" onclick="tumblrLink()">
+                </button>
+            </div>
+            
+
+        </div>
+      </section>
+            
+      <section id="code-iface" class="panel code" data-section-name="code">
+        <img src="images/codeLarge.png" id="codeIcon"/>
+          <span class="labels" id="label-code">code.</span>
+          
+          <div class="codeBlock">
+            
+              <div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="https://github.com/maxdmayhew" class="thumbnail">
+      <img src="images/github2.png" alt="github" class="img-responsive">
+    </a>Personal Account
+  </div>
+
+
+   <div class="col-xs-6 col-md-3">
+    <a href="http://nativethegame.com/" class="thumbnail">
+      <img src="images/native.png" alt="native" class="img-responsive">
+    </a>Native, 2D Game
+  </div>
+                  
+  <div class="col-xs-6 col-md-3">
+    <a href="https://youtu.be/kHOpuTQZwXI" class="thumbnail">
+        <img src="images/louie.png" alt="louie" class="img-responsive">
+    </a>Louie, 2D Game
+  </div>
+                  
+   <div class="col-xs-6 col-md-3">
+    <a href="http://globalgamejam.org/users/climax" class="thumbnail">
+      <img src="images/ggj.png" alt="global game jam" class="img-responsive">
+    </a>Global Game Jam
+  </div>
+
+    
+</div>
+          
+          </div>
+      </section>
+
+      <section id="art-iface" class="panel art" data-section-name="art">
+            <script src="js/galleria-1.4.2.min.js"></script>
+        <img src="images/artLarge.png" id="artIcon" />
+          <span class="labels" id="label-art">art.</span>
+          <div class="large-12 contents">
+            <div class="galleria">
+                
+                <img src="images/cat1.jpg" title="cat, 2016">
+                
+                <img src="images/ggj2016_1.jpg" title="Global Game Jam, 2016">
+                
+                <img src="/images/control.JPG" title="control, 2015">
+                <img src="/images/owl3.jpg" title="owl, 2015">
+                <img src="/images/dog.JPG" title="dog, 2015">
+                <img src="/images/falling.PNG" title="falling, 2015"> 
+
+                <img src="/images/louieDemo.jpg" title="Louie demo level">
+                <img src="images/louieRun.gif" title="Louie run animation">
+                <img src="/images/vfx.gif" title="dust animation from Native">
+                <img src="/images/fox.gif" title="animation created in Unity">
+                <img src="/images/customfont.JPG" title="custom font created for Native">
+
+                <img src="/images/ss4.JPG" title="menu UI from Native">
+                <img src="/images/helms.JPG" title="helm concepts from Native">
+                <img src="/images/ss1.jpg" title="storage chest UI from Native">
+                <img src="/images/ss5.JPG" title="more menu UI from Native">
+   
+            </div>
+          </div>       
+      </section>
+
+        
+      <section id="resume-iface" class="panel resume" data-section-name="resume">
+        <div class="large-12 contents">
+            <div class="resumeLink">
+            <a href="resume.pdf">
+          <img src="images/resumeLarge.png">
+                <span class="labels" id="label-resume">resume.</span></a></div>
+            
+            <br> <br> <br>contact me: <br> maxdmayhew@gmail.com
+
+                </div>          
+      </section> 
+     </div>
+     
+     <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74995011-1', 'auto');
+  ga('send', 'pageview');
+
+     </script> 
+     
+     
+ </body>
+    
+   
+    
+    
 </html>

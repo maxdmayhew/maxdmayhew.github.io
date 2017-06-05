@@ -1,23 +1,17 @@
-$(document).ready(function () {
-    //init swiper
-    var swiper = new Swiper ('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        sildesPerView: 1,
-        spaceBetween: 30,
-        loop: true
-    })
-});
-
 $(document).ready(function() {
 
-  $(function() {
+	$(function() {
         $.scrollify({
                 section: ".panel"
             });
+        
+            Galleria.loadTheme('../themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+    
     })
 });
+
+
 
 function up() {
     $.scrollify.previous();
